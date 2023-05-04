@@ -1,0 +1,16 @@
+//  "http://127.0.0.1:8000/api-token-auth"
+{
+  "username": "dristy",
+  "password": "Password!@#"
+}
+
+// http://127.0.0.1:8000/register
+
+{
+  "username": "dristy",
+  "password": "Password!@#",
+  "password2": "Password!@#",
+  "email": "dristy@gmail.com",
+  "first_name": "Dristy",
+  "last_name": "Srivastava"
+}

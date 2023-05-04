@@ -1,0 +1,168 @@
+{
+  "_type": "export",
+  "__export_format": 1,
+  "__export_date": "2023-05-04T09:49:43.656Z",
+  "__export_source": "insomnia.chrome.app:v2.7.0",
+  "items": [
+    {
+      "_type": "request_group",
+      "_id": "grp_1437333314976",
+      "name": "Insomnia",
+      "environments": {},
+      "requests": [
+        {
+          "_type": "request",
+          "_id": "req_1683042482755",
+          "url": "http://127.0.0.1:8000/mobile/login/",
+          "method": "POST",
+          "body": "{\r\n  \"username\": \"dsrivastava\",\r\n  \"password\": \"password@\"\r\n}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "mobile login"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1683044486236",
+          "url": "http://127.0.0.1:8000/mobile/add/",
+          "method": "POST",
+          "body": "{\r\n    \"username\": \"dsrivastava1\",\r\n    \"password\": \"password@\",\r\n    \"brand\": \"iphone\",\r\n    \"model\": \"13 Pro\",\r\n    \"colour\": \"Red\",\r\n    \"price\": 1200000\r\n}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "Authorization",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "mobile add"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1683181621635",
+          "url": "http://127.0.0.1:8000/mobile/delete/",
+          "method": "POST",
+          "body": "{\r\n    \"username\": \"dsrivastava\",\r\n    \"password\": \"password@\",\r\n    \"device_id\": \"1\"\r\n}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "Authorization",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "mobile delete"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1683182145645",
+          "url": "http://127.0.0.1:8000/mobile/list/",
+          "method": "GET",
+          "body": "",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "Authorization",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "mobile list all"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1683182243895",
+          "url": "http://127.0.0.1:8000/mobile/filter/",
+          "method": "GET",
+          "body": "",
+          "headers": [],
+          "params": [
+            {
+              "name": "brand",
+              "value": "iPhone"
+            }
+          ],
+          "authentication": {
+            "_type": "basic",
+            "username": "Authorization",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "mobile list by filter"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1683193050403",
+          "url": "http://127.0.0.1:8000/mobile/price-range/",
+          "method": "GET",
+          "body": "",
+          "headers": [],
+          "params": [
+            {
+              "name": "min_price",
+              "value": "100000"
+            },
+            {
+              "name": "max_price",
+              "value": "1200000.00"
+            }
+          ],
+          "authentication": {
+            "_type": "basic",
+            "username": "Authorization",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "mobile list by filter price range"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1683193200216",
+          "url": "http://127.0.0.1:8000/mobile/order/",
+          "method": "GET",
+          "body": "",
+          "headers": [],
+          "params": [
+            {
+              "name": "order_by",
+              "value": "descending"
+            }
+          ],
+          "authentication": {
+            "_type": "basic",
+            "username": "Authorization",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "mobile order by"
+        }
+      ]
+    }
+  ]
+}
